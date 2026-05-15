@@ -1,0 +1,3485 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Novasun — встановлення сонячних електростанцій під ключ. Знизьте витрати на електроенергію на 30–50%. Гарантія 25 років." />
+<title>Novasun — Сонячні електростанції під ключ</title>
+<link rel="icon" type="image/png" href="assets/symbol__color.png" />
+<link rel="apple-touch-icon" href="assets/symbol__color.png" />
+
+<!-- Local font: Inter Tight -->
+
+<style>
+/* ================================================
+   FONT FACE — Inter Tight (local)
+   ================================================ */
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('fonts/InterTight-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ================================================
+   RESET & BASE
+   ================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --yellow: #F59E0B;
+  --orange: #F08F2C;           /* brand orange (sun core) */
+  --orange-deep: #E07614;
+  --brand-blue: #2451F1;       /* brand blue (logo petals) */
+  --brand-blue-dark: #1A3DC4;
+  --navy: #0A1230;             /* brand text color — deep ink */
+  --navy-soft: #1E2A4A;
+  --muted: #6B7280;
+  --bg: #FFFFFF;
+  --bg-soft: #F9FAFB;
+  --border: #E5E7EB;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(10, 18, 48, 0.08);
+  --shadow-lg: 0 12px 32px rgba(10, 18, 48, 0.14);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --container: 1240px;
+  --transition: 0.3s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--navy);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul { list-style: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section { padding: 96px 0; }
+.section-title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0 auto 56px;
+  font-size: 17px;
+}
+
+/* ================================================
+   BUTTONS
+   ================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+  color: white;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.45);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: white;
+}
+.btn-large {
+  padding: 18px 36px;
+  font-size: 17px;
+}
+
+/* ================================================
+   HEADER
+   ================================================ */
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  padding: 14px 0;
+}
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-md);
+  padding: 10px 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+}
+.header.scrolled .logo-img { height: 34px; }
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.footer-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation */
+.nav { display: flex; gap: 4px; align-items: center; }
+.nav-item { position: relative; }
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--navy);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+.nav-link:hover { color: var(--orange); background: rgba(245, 158, 11, 0.08); }
+.nav-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
+.nav-item:hover .nav-link svg { transform: rotate(180deg); }
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 280px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: var(--transition);
+  margin-top: 8px;
+}
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.dropdown a:hover { background: var(--bg-soft); color: var(--orange); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.phone-toggle {
+  position: relative;
+}
+.phone-icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(36, 81, 241, 0.08);
+  border: 1px solid rgba(36, 81, 241, 0.15);
+  color: var(--brand-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.phone-icon-btn:hover {
+  background: var(--brand-blue);
+  color: white;
+  border-color: var(--brand-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(36, 81, 241, 0.3);
+}
+.phone-toggle.open .phone-icon-btn {
+  background: var(--brand-blue);
+  color: white;
+  border-color: var(--brand-blue);
+}
+.phone-popover {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(10, 18, 48, 0.18);
+  padding: 14px 18px;
+  min-width: 240px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: var(--transition);
+  z-index: 100;
+}
+.phone-popover::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 16px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(45deg);
+  border-top-left-radius: 2px;
+}
+.phone-toggle.open .phone-popover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.phone-popover-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  white-space: nowrap;
+  margin-bottom: 4px;
+  transition: var(--transition);
+}
+.phone-popover-link:hover { color: var(--orange); }
+.phone-popover-link svg { color: var(--orange); }
+.phone-popover-hint {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+.lang-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.lang-switcher:hover { border-color: var(--orange); }
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 80px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  margin-top: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: var(--transition);
+  z-index: 10;
+}
+.lang-switcher:hover .lang-dropdown,
+.lang-switcher.open .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.lang-dropdown a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: center;
+}
+.lang-dropdown a:hover { background: var(--bg-soft); }
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.burger span {
+  width: 24px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+.burger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ================================================
+   HERO
+   ================================================ */
+.hero {
+  position: relative;
+  padding: 108px 0 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+@keyframes spin-slow {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+.hero .container { position: relative; z-index: 1; width: 100%; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-stats-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 36px 32px;
+  backdrop-filter: blur(20px);
+}
+.hero-stats-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.hero-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.hero-stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px 16px;
+}
+.hero-stat-num {
+  font-size: clamp(26px, 2.8vw, 38px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.hero-stat-num.accent {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-stat-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgba(10, 18, 48, 0.88) 0%, rgba(10, 18, 48, 0.60) 45%, rgba(15, 30, 70, 0.45) 100%),
+    url('../img/hero/solar-panels1.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 40%, rgba(240, 144, 40, 0.18), transparent 50%),
+              radial-gradient(circle at 15% 70%, rgba(36, 81, 241, 0.15), transparent 45%);
+  z-index: -1;
+}
+.hero-content { max-width: 820px; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(36, 81, 241, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.hero-badge-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240, 144, 40, 0.7); }
+  50% { box-shadow: 0 0 0 8px rgba(240, 144, 40, 0); }
+}
+
+.hero-title-wrapper {
+  min-height: 200px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.hero-title {
+  font-size: clamp(32px, 5.5vw, 56px);
+  font-weight: 800;
+  color: white;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.hero-title.active { opacity: 1; }
+.hero-title.typing::after {
+  content: '|';
+  color: var(--orange);
+  font-weight: 300;
+  animation: blink-cursor 0.7s step-end infinite;
+}
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.hero-title .accent {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 36px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  border-radius: var(--radius);
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+  transition: var(--transition);
+  margin-bottom: 40px;
+}
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(249, 115, 22, 0.55);
+}
+.hero-cta svg { width: 20px; height: 20px; }
+
+.hero-markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 900px;
+}
+.hero-marker {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  max-width: 280px;
+  line-height: 1.5;
+}
+.hero-marker-icon {
+  flex-shrink: 0;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.hero-marker-icon svg { width: 14px; height: 14px; color: white; }
+
+.hero-dots {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-dot {
+  width: 36px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.hero-dot.active { background: var(--yellow); }
+
+/* ================================================
+   TRUST BAR (Marquee)
+   ================================================ */
+.trust-bar {
+  padding: 48px 0;
+  background: white;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+.marquee {
+  display: flex;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+.marquee-track {
+  display: flex;
+  animation: marquee 28s linear infinite;
+  gap: 80px;
+  padding-right: 80px;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.partner-logo {
+  flex-shrink: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-logo img {
+  height: 42px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.55;
+  transition: var(--transition);
+  display: block;
+}
+.partner-logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ================================================
+   SERVICES
+   ================================================ */
+.services { background: white; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.service-card {
+  position: relative;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon-wrap {
+  width: 64px; height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(249, 115, 22, 0.12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  margin-bottom: 22px;
+  transition: var(--transition);
+}
+.service-card:hover .service-icon-wrap {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  transform: rotate(-6deg) scale(1.05);
+}
+.service-icon-wrap svg { width: 30px; height: 30px; }
+
+.service-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.service-desc {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 20px;
+  line-height: 1.65;
+}
+.service-list {
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--navy);
+  padding: 7px 0;
+  line-height: 1.45;
+}
+.service-list li svg {
+  flex-shrink: 0;
+  width: 16px; height: 16px;
+  color: var(--orange);
+  margin-top: 3px;
+}
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: auto;
+  transition: var(--transition);
+  align-self: flex-start;
+  cursor: pointer;
+}
+.service-link:hover { gap: 12px; color: var(--navy); }
+
+/* ================================================
+   CALCULATOR
+   ================================================ */
+.calculator {
+  background: linear-gradient(180deg, var(--bg-soft) 0%, white 100%);
+}
+.calc-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 48px;
+}
+.calc-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  position: relative;
+}
+.calc-progress::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+.calc-progress-line {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
+  z-index: 1;
+  transition: width 0.4s ease;
+  width: 0;
+}
+.calc-step-indicator {
+  position: relative;
+  z-index: 2;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--muted);
+  transition: var(--transition);
+}
+.calc-step-indicator.active {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  border-color: var(--orange);
+  color: white;
+}
+.calc-step-indicator.completed {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.calc-step { display: none; }
+.calc-step.active { display: block; animation: fadeIn 0.4s ease; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.calc-step-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+.calc-step-subtitle {
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.calc-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.calc-option {
+  position: relative;
+  cursor: pointer;
+}
+.calc-option input { position: absolute; opacity: 0; }
+.calc-option-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  height: 100%;
+}
+.calc-option:hover .calc-option-content {
+  border-color: var(--orange);
+  background: rgba(245, 158, 11, 0.04);
+}
+.calc-option input:checked + .calc-option-content {
+  border-color: var(--orange);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(249, 115, 22, 0.05));
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+}
+.calc-option-icon {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.calc-option input:checked + .calc-option-content .calc-option-icon {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+}
+.calc-option-icon svg { width: 22px; height: 22px; color: var(--orange); transition: var(--transition); }
+.calc-option input:checked + .calc-option-content .calc-option-icon svg { color: white; }
+.calc-option-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--navy);
+}
+
+.calc-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.calc-controls .btn-outline { padding: 12px 24px; }
+
+.calc-result {
+  display: none;
+  padding: 36px;
+  background: linear-gradient(135deg, var(--navy) 0%, #2c4a7a 100%);
+  border-radius: var(--radius-lg);
+  color: white;
+  text-align: center;
+  margin-top: 24px;
+}
+.calc-result.show { display: block; animation: fadeIn 0.5s ease; }
+.calc-result h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.calc-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.calc-result-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.calc-result-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+.calc-result-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+/* ================================================
+   PROCESS / TIMELINE
+   ================================================ */
+.process {
+  background: white;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  position: relative;
+}
+.timeline-grid::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
+  z-index: 0;
+}
+.timeline-item {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.timeline-num {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--orange);
+  margin: 0 auto 16px;
+  transition: var(--transition);
+  position: relative;
+}
+.timeline-item:hover .timeline-num {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  transform: scale(1.08);
+}
+.timeline-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--navy);
+}
+.timeline-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+.process-cta { text-align: center; margin-top: 56px; }
+
+/* ================================================
+   PORTFOLIO
+   ================================================ */
+.portfolio { background: var(--bg-soft); }
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.filter-btn {
+  padding: 10px 22px;
+  border: 2px solid var(--border);
+  background: white;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.filter-btn:hover { border-color: var(--orange); color: var(--orange); }
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.portfolio-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.portfolio-img-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+.portfolio-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+.portfolio-card:hover .portfolio-img { transform: scale(1.08); }
+.portfolio-power {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: var(--shadow-md);
+}
+.portfolio-body {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+.portfolio-savings {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+.portfolio-savings strong { color: var(--orange); font-weight: 700; }
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+.portfolio-link:hover { gap: 10px; color: var(--navy); }
+
+/* ================================================
+   TESTIMONIALS
+   ================================================ */
+.testimonials { background: white; }
+.testimonials-slider {
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.testimonials-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.testimonial-card {
+  min-width: 100%;
+  padding: 0 8px;
+}
+.testimonial-inner {
+  background: var(--bg-soft);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+}
+.testimonial-stars {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 20px;
+  color: var(--yellow);
+}
+.testimonial-stars svg { width: 20px; height: 20px; }
+.testimonial-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--navy);
+  margin-bottom: 28px;
+  font-style: italic;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.testimonial-avatar {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.testimonial-info { text-align: left; }
+.testimonial-name { font-weight: 700; color: var(--navy); font-size: 15px; }
+.testimonial-meta { font-size: 13px; color: var(--muted); }
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+.slider-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.slider-btn:hover {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  border-color: transparent;
+  color: white;
+}
+.slider-btn svg { width: 18px; height: 18px; }
+.slider-dots { display: flex; gap: 8px; }
+.slider-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.slider-dot.active {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* ================================================
+   FEATURES (Why Us)
+   ================================================ */
+.features { background: var(--bg-soft); }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.feature-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+.feature-icon {
+  width: 64px; height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(249, 115, 22, 0.12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  transition: var(--transition);
+}
+.feature-card:hover .feature-icon {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+}
+.feature-icon svg { width: 30px; height: 30px; }
+.feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.feature-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ================================================
+   FAQ
+   ================================================ */
+.faq { background: white; }
+.faq-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: var(--transition);
+  background: white;
+}
+.faq-item.open {
+  border-color: var(--orange);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.12);
+}
+.faq-question {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.faq-question:hover { color: var(--orange); }
+.faq-icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  color: var(--navy);
+}
+.faq-item.open .faq-icon {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  transform: rotate(45deg);
+}
+.faq-icon svg { width: 14px; height: 14px; }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-answer-inner {
+  padding: 0 24px 22px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ================================================
+   FINAL CTA
+   ================================================ */
+.final-cta {
+  background: linear-gradient(135deg, rgba(10,18,48,0.85) 0%, rgba(44,74,122,0.80) 50%, rgba(30,58,95,0.85) 100%),
+              url('../img/board-2/IMG_9139.JPG') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.25), transparent 70%);
+  border-radius: 50%;
+}
+.final-cta::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.2), transparent 70%);
+  border-radius: 50%;
+}
+.final-cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.final-cta .section-title { color: white; }
+.final-cta-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 40px;
+}
+.final-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.final-form input {
+  padding: 16px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  font-size: 15px;
+  color: white;
+  font-family: inherit;
+  transition: var(--transition);
+}
+.final-form input::placeholder { color: rgba(255, 255, 255, 0.6); }
+.final-form input:focus {
+  outline: none;
+  border-color: var(--yellow);
+  background: rgba(255, 255, 255, 0.12);
+}
+.final-form input.error { border-color: #EF4444; }
+.final-form .btn { padding: 16px; font-size: 16px; }
+
+.form-success {
+  display: none;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  border-radius: var(--radius);
+  padding: 20px;
+  color: #BBF7D0;
+  margin-top: 16px;
+}
+.form-success.show { display: block; animation: fadeIn 0.4s ease; }
+
+/* ================================================
+   FOOTER
+   ================================================ */
+.footer {
+  background: #0F172A;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 64px 0 24px;
+  font-size: 14px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 48px;
+}
+.footer-about {
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 360px;
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+.social-link {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition);
+}
+.social-link:hover {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  transform: translateY(-3px);
+}
+.social-link svg { width: 18px; height: 18px; }
+
+.footer-col h4 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer-col a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition);
+}
+.footer-col a:hover { color: var(--yellow); }
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.footer-contact-item svg {
+  flex-shrink: 0;
+  width: 16px; height: 16px;
+  color: var(--yellow);
+  margin-top: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ================================================
+   FLOATING ELEMENTS
+   ================================================ */
+.float-contacts {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.float-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+.float-contacts.open .float-stack {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.float-link {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+.float-link:hover { transform: scale(1.1); }
+.float-link svg { width: 22px; height: 22px; }
+.float-link.tg { background: #0088CC; }
+.float-link.viber { background: #7360F2; }
+.float-link.wa { background: #25D366; }
+.float-toggle {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+  transition: var(--transition);
+}
+.float-toggle:hover { transform: scale(1.05); }
+.float-toggle svg { width: 26px; height: 26px; transition: var(--transition); }
+.float-contacts.open .float-toggle svg { transform: rotate(45deg); }
+
+.scroll-top {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 900;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top:hover {
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  transform: translateY(-3px);
+}
+.scroll-top svg { width: 20px; height: 20px; }
+
+/* ================================================
+   POPUP MODAL
+   ================================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal {
+  background: white;
+  border-radius: var(--radius-lg);
+  max-width: 460px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  transform: scale(0.9) translateY(20px);
+  transition: var(--transition);
+  box-shadow: var(--shadow-lg);
+}
+.modal-overlay.open .modal { transform: scale(1) translateY(0); }
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.modal-close:hover {
+  background: var(--navy);
+  color: white;
+  transform: rotate(90deg);
+}
+.modal-close svg { width: 18px; height: 18px; }
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--navy);
+  padding-right: 40px;
+}
+.modal-subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-form input {
+  padding: 14px 18px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-family: inherit;
+  transition: var(--transition);
+}
+.modal-form input:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+.modal-form input.error { border-color: #EF4444; }
+.modal-form .btn { padding: 14px; }
+.modal-disclaimer {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ================================================
+   SCROLL REVEAL
+   ================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================================
+   MOBILE NAV
+   ================================================ */
+.mobile-nav {
+  position: fixed;
+  top: 0; right: -100%;
+  width: 85%;
+  max-width: 360px;
+  height: 100vh;
+  background: white;
+  z-index: 1500;
+  padding: 80px 24px 24px;
+  overflow-y: auto;
+  transition: right 0.4s ease;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+}
+.mobile-nav.open { right: 0; }
+.mobile-nav ul li { margin-bottom: 4px; }
+.mobile-nav a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.mobile-nav a:hover { background: var(--bg-soft); color: var(--orange); }
+.mobile-nav-group { margin-bottom: 12px; }
+.mobile-nav-title {
+  padding: 12px 16px;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.mobile-nav-sub a {
+  padding-left: 32px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.mobile-nav-cta { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+.mobile-nav-cta .btn { width: 100%; }
+.mobile-nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  transition: var(--transition);
+}
+.mobile-nav-phone:hover { border-color: var(--orange); color: var(--orange); }
+
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1400;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.mobile-overlay.open { opacity: 1; visibility: visible; }
+
+/* ================================================
+   RESPONSIVE
+   ================================================ */
+@media (max-width: 1024px) {
+  .nav { display: none; }
+  .burger { display: flex; }
+  .header-right .phone-toggle { display: none; }
+  .header-right .btn-primary { display: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .timeline-grid { grid-template-columns: repeat(3, 1fr); gap: 32px 20px; }
+  .timeline-grid::before { display: none; }
+  .calc-wrapper { padding: 32px 24px; }
+  .calc-result-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-stats-card { max-width: 560px; }
+}
+
+@media (max-width: 768px) {
+  section { padding: 64px 0; }
+  .hero { padding: 100px 0 56px; }
+  .hero-stats-card { display: none; }
+  .logo-img { height: 32px; }
+  .header.scrolled .logo-img { height: 28px; }
+  .hero-title-wrapper { min-height: 180px; }
+  .hero-markers { flex-direction: column; gap: 16px; }
+  .hero-marker { max-width: 100%; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 28px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .timeline-grid { grid-template-columns: 1fr; gap: 24px; }
+  .timeline-item { display: flex; align-items: center; text-align: left; gap: 16px; }
+  .timeline-num { margin: 0; flex-shrink: 0; width: 56px; height: 56px; font-size: 20px; }
+  .testimonial-inner { padding: 28px 20px; }
+  .modal { padding: 32px 24px; }
+  .float-contacts { bottom: 20px; right: 20px; }
+  .scroll-top { bottom: 20px; left: 20px; }
+  .lang-switcher { display: none; }
+  .calc-progress-item { display: none; }
+  .calc-progress { display: none; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .section-title { font-size: 26px; }
+  .logo-img { height: 28px; }
+  .calc-wrapper { padding: 24px 16px; }
+  .calc-options { grid-template-columns: 1fr; }
+  .feature-card { padding: 24px 18px; }
+  .hero-cta { padding: 16px 28px; font-size: 15px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER (sticky)
+     ============================================================ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="../img/logo/logo__color-black.png" alt="Novasun" class="logo-img" />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="#services" class="nav-link">
+          Послуги
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="#services">Монтаж СЕС</a>
+          <a href="#services">Електромонтажні роботи</a>
+          <a href="#services">Технічне обслуговування</a>
+          <a href="#services">Створення інфраструктури на об'єкті</a>
+          <a href="#services">Земляні роботи та палі (сваї)</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#portfolio" class="nav-link">
+          Проєкти
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="#portfolio">Для дому</a>
+          <a href="#portfolio">Для бізнесу</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="#features" class="nav-link">Про нас</a></div>
+      <div class="nav-item"><a href="#contacts" class="nav-link">Контакти</a></div>
+      <div class="nav-item"><a href="#calculator" class="nav-link">Калькулятор</a></div>
+    </nav>
+
+    <!-- Right side -->
+    <div class="header-right">
+      <div class="phone-toggle" id="phoneToggle">
+        <button class="phone-icon-btn" aria-label="Телефон">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </button>
+        <div class="phone-popover">
+          <a href="tel:+380501234567" class="phone-popover-link">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +38 (050) 123-45-67
+          </a>
+          <span class="phone-popover-hint">Натисніть, щоб подзвонити</span>
+        </div>
+      </div>
+      <button class="btn btn-primary open-modal">Отримати консультацію</button>
+      <div class="lang-switcher" id="langSwitcher">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span id="currentLang">UA</span>
+      </div>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<aside class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-title">Послуги</div>
+    <div class="mobile-nav-sub">
+      <a href="#services">Монтаж СЕС</a>
+      <a href="#services">Електромонтажні роботи</a>
+      <a href="#services">Технічне обслуговування</a>
+      <a href="#services">Інфраструктура на об'єкті</a>
+      <a href="#services">Земляні роботи та палі</a>
+    </div>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-title">Проєкти</div>
+    <div class="mobile-nav-sub">
+      <a href="#portfolio">Для дому</a>
+      <a href="#portfolio">Для бізнесу</a>
+    </div>
+  </div>
+  <ul>
+    <li><a href="#features">Про нас</a></li>
+    <li><a href="#contacts">Контакти</a></li>
+    <li><a href="#calculator">Калькулятор</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="tel:+380501234567" class="mobile-nav-phone">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +38 (050) 123-45-67
+    </a>
+    <button class="btn btn-primary open-modal">Отримати консультацію</button>
+  </div>
+</aside>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Працюємо по всій Україні
+        </div>
+
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title active">Світло у вашому домі 24/7 — <span class="accent">гібридна СЕС</span> із накопичувачем під ключ</h1>
+          <h1 class="hero-title">Знизьте витрати на електроенергію <span class="accent">на 30–50%</span> назавжди</h1>
+          <h1 class="hero-title"><span class="accent">Європейська експертиза</span>, українські ціни</h1>
+        </div>
+
+        <p class="hero-subtitle">Повна енергонезалежність вашої родини та бізнесу. Встановлюємо СЕС за стандартами ЄС — команда з досвідом промислових об'єктів у Європі.</p>
+
+        <a href="#" class="hero-cta open-modal">
+          Отримати безкоштовний аудит
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <div class="hero-markers">
+          <div class="hero-marker">
+            <span class="hero-marker-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>850+ реалізованих об’єктів. Власний штат інженерів із досвідом у ЄС</span>
+          </div>
+          <div class="hero-marker">
+            <span class="hero-marker-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>Обладнання лише Tier-1. Гарантія на продуктивність панелей — 25 років.</span>
+          </div>
+          <div class="hero-marker">
+            <span class="hero-marker-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span>Сервісний виїзд за 24 години. Власний підмінний фонд інверторів.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats-card">
+        <div class="hero-stats-label">Novasun у цифрах</div>
+        <div class="hero-stats-grid">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">850+</div>
+            <div class="hero-stat-text">Реалізованих об'єктів</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num accent">6</div>
+            <div class="hero-stat-text">Років досвіду</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">14</div>
+            <div class="hero-stat-text">Країн присутності</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num accent">36</div>
+            <div class="hero-stat-text">місяців гарантії</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <span class="hero-dot active" data-slide="0"></span>
+    <span class="hero-dot" data-slide="1"></span>
+    <span class="hero-dot" data-slide="2"></span>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR — Partners Marquee
+     ============================================================ -->
+<section class="trust-bar">
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="partner-logo"><img src="../img/partners/Frame.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 30.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 31.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 34.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 35.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 36.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 40.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 41.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/Frame.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 30.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 31.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 34.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 35.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 36.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 40.png" alt="Partner" /></div>
+      <div class="partner-logo"><img src="../img/partners/image 41.png" alt="Partner" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title reveal">Наші послуги</h2>
+    <p class="section-subtitle reveal">Працюємо як підрядник на будь-якому етапі будівництва сонячної станції — від земляних робіт до запуску й обслуговування. Ви визначаєте завдання — ми його виконуємо.</p>
+
+    <div class="services-grid">
+
+      <!-- 1. Монтаж СЕС -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="6" width="18" height="12" rx="1"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <line x1="3" y1="14" x2="21" y2="14"/>
+            <line x1="9" y1="6" x2="9" y2="18"/>
+            <line x1="15" y1="6" x2="15" y2="18"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Монтаж сонячних електростанцій</h3>
+        <p class="service-desc">Будуємо СЕС на будь-яких поверхнях і конструкціях. Кваліфіковані бригади реалізують проєкти від А до Я, дотримуючись документації та термінів.</p>
+        <ul class="service-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Земляні роботи й копання траншей</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Забивка паль і трамбування</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Монтаж основ для сонячних електросистем</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Прокладання кабелів (AC &amp; DC)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Установка інверторів та електромонтаж</li>
+        </ul>
+        <a class="service-link open-modal">Замовити послугу →</a>
+      </div>
+
+      <!-- 2. Електромонтажні роботи -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Електромонтажні роботи</h3>
+        <p class="service-desc">Повний комплекс електромонтажу на СЕС. Бригади електриків, монтажників і керівників проєкту забезпечують надійне підключення всіх елементів системи.</p>
+        <ul class="service-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Прокладання і монтаж кабелів</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Підключення інверторів</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Стрингування фотоелектричних модулів</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Забезпечення об'єкта інструментами</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Підготовка необхідного обладнання</li>
+        </ul>
+        <a class="service-link open-modal">Замовити послугу →</a>
+      </div>
+
+      <!-- 3. Технічне обслуговування -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Технічне обслуговування</h3>
+        <p class="service-desc">Регулярний моніторинг, діагностика й оперативний ремонт — щоб ваша станція працювала без перебоїв і втрат потужності.</p>
+        <ul class="service-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Перевірка й контроль конструкцій</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Заміна й налаштування інверторів</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ремонт після штормів і погодних ушкоджень</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Перепідключення й модернізація</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Демонтаж, монтаж і тимчасове зберігання</li>
+        </ul>
+        <a class="service-link open-modal">Замовити послугу →</a>
+      </div>
+
+      <!-- 4. Інфраструктура на об'єкті -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="1"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Створення інфраструктури на об'єкті</h3>
+        <p class="service-desc">Організовуємо майданчик так, щоб робочий процес був безпечним і зручним — комфорт для співробітників і збереження обладнання.</p>
+        <ul class="service-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Санітарні й душові зони</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Роздягальні та зони відпочинку</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Офісні контейнери й технічні приміщення</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Зберігання та складування компонентів</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Повне забезпечення побутової інфраструктури</li>
+        </ul>
+        <a class="service-link open-modal">Замовити послугу →</a>
+      </div>
+
+      <!-- 5. Земляні роботи -->
+      <div class="service-card reveal">
+        <div class="service-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 22h20"/>
+            <path d="M6 18l3-8 4 5 3-3 4 6"/>
+            <path d="M14 4l3-2 2 3-2 2"/>
+            <path d="M17 5l-3 3"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Земляні роботи та палі (сваї)</h3>
+        <p class="service-desc">Повний цикл підготовки майданчика для наземних СЕС: від розкопок і вирівнювання до забивки паль. Спецтехніка та фахівці забезпечать надійну основу.</p>
+        <ul class="service-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Риття траншей і підготовка ґрунту</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Забивання паль для фундаменту</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Вирівнювання майданчика під установку</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Робота з міні-екскаваторами та бульдозерами</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Професійна підготовка ґрунту</li>
+        </ul>
+        <a class="service-link open-modal">Замовити послугу →</a>
+      </div>
+
+      <!-- 6. Card with CTA -->
+      <div class="service-card reveal" style="background: linear-gradient(135deg, var(--navy) 0%, #2c4a7a 100%); border: none; color: white;">
+        <div class="service-icon-wrap" style="background: linear-gradient(135deg, var(--yellow), var(--orange)); color: white;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3 class="service-title" style="color: white;">Не знайшли потрібну послугу?</h3>
+        <p class="service-desc" style="color: rgba(255,255,255,0.8);">Опишіть ваше завдання — наш інженер прорахує індивідуальне рішення під ваш об'єкт і бюджет. Безкоштовна консультація за 30 хвилин.</p>
+        <ul class="service-list" style="margin-bottom: 28px;">
+          <li style="color: rgba(255,255,255,0.9);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: var(--yellow);"><polyline points="20 6 9 17 4 12"/></svg>Виїзд інженера на об'єкт безкоштовно</li>
+          <li style="color: rgba(255,255,255,0.9);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: var(--yellow);"><polyline points="20 6 9 17 4 12"/></svg>Технічне завдання та кошторис за 48 год</li>
+          <li style="color: rgba(255,255,255,0.9);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: var(--yellow);"><polyline points="20 6 9 17 4 12"/></svg>Прозоре ціноутворення без сюрпризів</li>
+        </ul>
+        <button class="btn btn-primary open-modal" style="align-self: flex-start;">Отримати консультацію</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CALCULATOR
+     ============================================================ -->
+<section class="calculator" id="calculator">
+  <div class="container">
+    <h2 class="section-title reveal">Швидкий розрахунок бюджету на встановлення СЕС</h2>
+    <p class="section-subtitle reveal">Дайте відповідь на 4 короткі запитання — отримайте орієнтовний кошторис за хвилину.</p>
+
+    <div class="calc-wrapper reveal">
+      <!-- Progress indicators -->
+      <div class="calc-progress">
+        <div class="calc-progress-line" id="calcProgressLine"></div>
+        <div class="calc-step-indicator active" data-step="1">1</div>
+        <div class="calc-step-indicator" data-step="2">2</div>
+        <div class="calc-step-indicator" data-step="3">3</div>
+        <div class="calc-step-indicator" data-step="4">4</div>
+      </div>
+
+      <!-- Step 1: Object type -->
+      <div class="calc-step active" data-step="1">
+        <h3 class="calc-step-title">Крок 1. Тип об'єкта</h3>
+        <p class="calc-step-subtitle">Виберіть категорію, яка найбільше відповідає вашому випадку.</p>
+        <div class="calc-options">
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="commercial" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M2 22h20"/><path d="M10 6h4M10 10h4M10 14h4"/></svg></div>
+              <span class="calc-option-text">Комерційна нерухомість (офіси, ТРЦ, адмінбудівлі)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="leisure" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 21V11M18 21V11M9 5h6M12 3v4M6 11h12"/></svg></div>
+              <span class="calc-option-text">Заклади відпочинку (готелі, санаторії)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="food" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+              <span class="calc-option-text">Сфера харчування (ресторани, кафе)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="private" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <span class="calc-option-text">Приватний сектор (котеджі, будинки, дачі)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="industrial" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/></svg></div>
+              <span class="calc-option-text">Промислові об'єкти та виробництва</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="object_type" value="custom" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+              <span class="calc-option-text">Свій варіант</span>
+            </div>
+          </label>
+        </div>
+        <div class="calc-controls">
+          <span></span>
+          <button class="btn btn-primary calc-next" data-next="2">Далі →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Purpose -->
+      <div class="calc-step" data-step="2">
+        <h3 class="calc-step-title">Крок 2. Завдання СЕС</h3>
+        <p class="calc-step-subtitle">Яку основну мету ви хочете досягти встановленням станції?</p>
+        <div class="calc-options">
+          <label class="calc-option">
+            <input type="radio" name="purpose" value="profit" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <span class="calc-option-text">Генерація прибутку (продаж надлишків)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="purpose" value="autonomy" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="6 12 9 9 12 12 15 9"/></svg></div>
+              <span class="calc-option-text">Абсолютна автономність</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="purpose" value="backup" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <span class="calc-option-text">Резервне джерело живлення</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="purpose" value="savings" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <span class="calc-option-text">Зниження витрат на електрику</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="purpose" value="expansion" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></div>
+              <span class="calc-option-text">Розширення лімітів потужності</span>
+            </div>
+          </label>
+        </div>
+        <div class="calc-controls">
+          <button class="btn btn-outline calc-prev" data-prev="1">← Назад</button>
+          <button class="btn btn-primary calc-next" data-next="3">Далі →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Reason -->
+      <div class="calc-step" data-step="3">
+        <h3 class="calc-step-title">Крок 3. Причина переходу</h3>
+        <p class="calc-step-subtitle">Що штовхає вас до встановлення сонячної електростанції?</p>
+        <div class="calc-options">
+          <label class="calc-option">
+            <input type="radio" name="reason" value="voltage" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 12 7 12 10 6 14 18 17 12 21 12"/></svg></div>
+              <span class="calc-option-text">Нестабільна напруга в мережі</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="reason" value="blackouts" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
+              <span class="calc-option-text">Регулярні перебої з електропостачанням</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="reason" value="tariffs" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <span class="calc-option-text">Високі тарифи</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="reason" value="no_grid" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l22 22"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+              <span class="calc-option-text">Відсутність доступу до мережі</span>
+            </div>
+          </label>
+        </div>
+        <div class="calc-controls">
+          <button class="btn btn-outline calc-prev" data-prev="2">← Назад</button>
+          <button class="btn btn-primary calc-next" data-next="4">Далі →</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Mounting location -->
+      <div class="calc-step" data-step="4">
+        <h3 class="calc-step-title">Крок 4. Місце монтажу</h3>
+        <p class="calc-step-subtitle">Де плануєте розмістити сонячні панелі?</p>
+        <div class="calc-options">
+          <label class="calc-option">
+            <input type="radio" name="mounting" value="roof" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12L12 3l9 9"/><path d="M5 10v10h14V10"/></svg></div>
+              <span class="calc-option-text">На даху будівлі</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="mounting" value="ground" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="10"/><line x1="3" y1="20" x2="21" y2="20"/><line x1="6" y1="16" x2="6" y2="20"/><line x1="18" y1="16" x2="18" y2="20"/></svg></div>
+              <span class="calc-option-text">Наземне (опорні конструкції)</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="mounting" value="canopy" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9l10-6 10 6"/><line x1="4" y1="9" x2="4" y2="21"/><line x1="20" y1="9" x2="20" y2="21"/><line x1="2" y1="9" x2="22" y2="9"/></svg></div>
+              <span class="calc-option-text">Сонячні навіси</span>
+            </div>
+          </label>
+          <label class="calc-option">
+            <input type="radio" name="mounting" value="alt" />
+            <div class="calc-option-content">
+              <div class="calc-option-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 10v6m11-11h-6M7 12H1m15.5-7.5l-4.2 4.2m-4.6 4.6L3.5 20.5m17 0l-4.2-4.2m-4.6-4.6L3.5 3.5"/></svg></div>
+              <span class="calc-option-text">Альтернативне розміщення</span>
+            </div>
+          </label>
+        </div>
+        <div class="calc-controls">
+          <button class="btn btn-outline calc-prev" data-prev="3">← Назад</button>
+          <button class="btn btn-primary" id="calcCalculate">Сформувати індивідуальний кошторис!</button>
+        </div>
+      </div>
+
+      <!-- Result block -->
+      <div class="calc-result" id="calcResult">
+        <h3>Орієнтовний кошторис для вашого об'єкта</h3>
+        <div class="calc-result-grid">
+          <div class="calc-result-item">
+            <div class="calc-result-label">Потужність системи</div>
+            <div class="calc-result-value" id="resPower">— кВт</div>
+          </div>
+          <div class="calc-result-item">
+            <div class="calc-result-label">Вартість «під ключ»</div>
+            <div class="calc-result-value" id="resPrice">— грн</div>
+          </div>
+          <div class="calc-result-item">
+            <div class="calc-result-label">Окупність</div>
+            <div class="calc-result-value" id="resPayback">— років</div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-large open-modal">Отримати точний розрахунок</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS — How we work
+     ============================================================ -->
+<section class="process" id="process">
+  <div class="container">
+    <h2 class="section-title reveal">Як ми працюємо</h2>
+    <p class="section-subtitle reveal">Прозорий процес від першого дзвінка до запуску станції — без сюрпризів та прихованих платежів.</p>
+
+    <div class="timeline reveal">
+      <div class="timeline-grid">
+        <div class="timeline-item">
+          <div class="timeline-num">1</div>
+          <div class="timeline-title">Обстеження об'єкта</div>
+          <div class="timeline-meta"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-num">2</div>
+          <div class="timeline-title">Підготовка рішення</div>
+          <div class="timeline-meta"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-num">3</div>
+          <div class="timeline-title">Проєктування</div>
+          <div class="timeline-meta"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-num">4</div>
+          <div class="timeline-title">Комплектація та доставка</div>
+          <div class="timeline-meta"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-num">5</div>
+          <div class="timeline-title">Монтаж</div>
+          <div class="timeline-meta"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-num">6</div>
+          <div class="timeline-title">Гарантійний супровід</div>
+          <div class="timeline-meta">і технічна підтримка</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-cta reveal">
+      <button class="btn btn-primary btn-large open-modal">Замовити прорахунок</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO
+     ============================================================ -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2 class="section-title reveal">Реалізовані об'єкти</h2>
+    <p class="section-subtitle reveal">Понад 850 успішно реалізованих проєктів — від невеликих будинків до промислових станцій.</p>
+
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="all">Всі</button>
+      <button class="filter-btn" data-filter="home">Будинки</button>
+      <button class="filter-btn" data-filter="business">Бізнес</button>
+      <button class="filter-btn" data-filter="industry">Промисловість</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+      <div class="portfolio-card reveal" data-category="home">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/house-1.jpg" alt="Приватний будинок, Київ" class="portfolio-img" />
+          <div class="portfolio-power">10 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Приватний будинок, Київ</h3>
+          <p class="portfolio-savings">Заощаджує <strong>~3 200 грн/міс</strong></p>
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-category="home">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/house-2.jpg" alt="Приватний будинок, Київ" class="portfolio-img" />
+          <div class="portfolio-power">8 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Приватний будинок, Київ</h3>
+          <p class="portfolio-savings">Заощаджує <strong>~2 600 грн/міс</strong></p>
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-category="business">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/biz-1.jpg" alt="Монтаж Німеччина" class="portfolio-img" />
+          <div class="portfolio-power">120 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Монтаж Німеччина</h3>
+          
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-category="business">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/biz-2.JPG" alt="Монтаж Німеччина Пархим" class="portfolio-img" />
+          <div class="portfolio-power">200 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Монтаж Німеччина Пархим</h3>
+          
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-category="home">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/house-3.jpg" alt="Приватний будинок, Вінниця" class="portfolio-img" />
+          <div class="portfolio-power">12 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Приватний будинок, Вінниця</h3>
+          <p class="portfolio-savings">Заощаджує <strong>~3 800 грн/міс</strong></p>
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+      <div class="portfolio-card reveal" data-category="industry">
+        <div class="portfolio-img-wrap">
+          <img src="../img/projects/biz-3.jpeg" alt="Склад/виробництво, Харків" class="portfolio-img" />
+          <div class="portfolio-power">100 кВт</div>
+        </div>
+        <div class="portfolio-body">
+          <h3 class="portfolio-name">Склад/виробництво, Німеччина</h3>
+          
+          <a href="#" class="portfolio-link">Детальніше →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title reveal">Що кажуть наші клієнти</h2>
+    <p class="section-subtitle reveal">Реальні відгуки родин і бізнесів, що вже встановили СЕС з Novasun.</p>
+
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Встановили СЕС під ключ за 3 тижні. Команда допомогла підібрати оптимальну потужність без переплат. Уже в перший місяць платіжки за електроенергію впали майже втричі.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/men-1.jpg" alt="Андрій Коваленко" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Андрій Коваленко</div>
+                <div class="testimonial-meta">Київ, будинок 240 м²</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Довго сумнівались, але зараз розуміємо — правильне рішення. Все встановили акуратно, інвертор налаштували, пояснили як користуватись додатком моніторингу.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/women-1.jpg" alt="Олена Мельник" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Олена Мельник</div>
+                <div class="testimonial-meta">Львів, котедж</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Головний плюс — автономність під час відключень. СЕС з акумуляторами реально виручає всю сім'ю. Монтаж виконали професійно, без затримок і сюрпризів по ціні.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/men-2.jpg" alt="Сергій Бондар" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Сергій Бондар</div>
+                <div class="testimonial-meta">Дніпро, приватний будинок</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Сподобалась чесна консультація без нав'язування дорогого обладнання. Підібрали рішення під наш бюджет. Станція тихо працює, а економія відчутна вже зараз.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/women-2.jpg" alt="Ірина Савчук" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Ірина Савчук</div>
+                <div class="testimonial-meta">Ірпінь, таунхаус</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Допомогли з документами, монтажем і запуском. Роботою задоволений на 100%.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/men-3.jpg" alt="Віктор Романюк" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Віктор Романюк</div>
+                <div class="testimonial-meta">Одеса, будинок біля моря</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Після встановлення СЕС рахунки стали значно менші. Команда завжди була на зв'язку та відповідала на всі питання.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/women-3.jpg" alt="Наталія Гриценко" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Наталія Гриценко</div>
+                <div class="testimonial-meta">Вінниця, будинок з тепловим насосом</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">«Монтаж виконали швидко й акуратно. Хочу відзначити підтримку після встановлення — допомогли налаштувати моніторинг.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="../img/projects/people/men-4.jpg" alt="Максим Литвин" /></div>
+              <div class="testimonial-info">
+                <div class="testimonial-name">Максим Литвин</div>
+                <div class="testimonial-meta">Буча, приватний будинок</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-nav reveal">
+      <button class="slider-btn" id="sliderPrev">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="sliderNext">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES — Why Novasun
+     ============================================================ -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title reveal">Чому обирають Novasun</h2>
+    <p class="section-subtitle reveal">5 причин, чому понад 850 родин і компаній довірили нам встановлення СЕС.</p>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="feature-title">Реальна економія з першого місяця</h3>
+        <p class="feature-desc">Підбираємо рішення під ваше споживання — без переплат за зайву потужність.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="feature-title">Повний супровід під ключ</h3>
+        <p class="feature-desc">Проєктування, монтаж, документи, запуск — все робимо самі. Один контакт від А до Я.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="feature-title">Десятки тисяч встановлених панелей</h3>
+        <p class="feature-desc">Досвід реалізації об'єктів в Україні та країнах ЄС.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="feature-title">Чесний підхід без прихованих доплат</h3>
+        <p class="feature-desc">Фіксуємо умови в договорі, пояснюємо кожен етап і кожну позицію кошторису.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title reveal">Часті запитання</h2>
+    <p class="section-subtitle reveal">Відповіді на найпоширеніші питання про встановлення СЕС.</p>
+
+    <div class="faq-wrapper">
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Скільки коштує встановлення СЕС під ключ?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Вартість залежить від потужності системи, типу обладнання та об'єкта. Для приватного будинку 8–15 кВт орієнтовно 200 000–380 000 грн. Точну ціну можна отримати після безкоштовного аудиту або за допомогою нашого онлайн-калькулятора.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Скільки років окуповується сонячна електростанція?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Окупність СЕС у середньому 3–5 років для бізнесу та 4–5 років для приватного сектору. Після цього станція генерує електроенергію фактично безкоштовно ще 20+ років.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Чи буде працювати СЕС під час відключень електроенергії?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Так — за умови встановлення гібридної СЕС з акумуляторами або резервним інвертором. Така система автоматично переходить у автономний режим за 0,02 секунди і продовжує живити будинок.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Скільки часу займає монтаж станції?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Сам монтаж займає 5–8 робочих днів. Повний цикл від обстеження до запуску — близько 4–6 тижнів з урахуванням проєктування, комплектації та доставки обладнання.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Яка гарантія на обладнання та роботи?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">На продуктивність сонячних панелей — 25 років, на інвертори — 5–10 років, на акумулятори — 10 років. На монтажні роботи — 5 років. Усі гарантії офіційно фіксуються в договорі.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Чи потрібні дозвільні документи?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Для приватної СЕС до 30 кВт особливих дозволів не потрібно. Для підключення за «зеленим тарифом» або для комерційних об'єктів готуємо повний пакет документів самостійно — ви не витрачаєте час на бюрократію.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Чи можна встановити СЕС на старий дах?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Перед монтажем наш інженер обстежує дах і оцінює його стан. Якщо несуча здатність достатня — можна. Якщо ні — пропонуємо альтернативи: наземне розміщення, навіси або попередній ремонт даху.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Скільки електроенергії генерує СЕС взимку?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Зимою виробіток падає на 60–70% від літнього через коротший світловий день. Однак станція все одно працює і живить будинок, особливо в сонячні морозні дні — холод навіть підвищує ККД панелей.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Чи можна продавати надлишки електроенергії державі?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Так, за умовами програми «зеленого тарифу» для приватних будинків та бізнесу. Ми готуємо всі необхідні документи, узгодження з обленерго та допомагаємо оформити договір на продаж надлишків.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Як обслуговується СЕС?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">СЕС практично не вимагає обслуговування. Рекомендуємо 1–2 рази на рік перевіряти кріплення та чистити панелі від пилу. Наша компанія пропонує річні сервісні контракти з виїздом інженера.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Що робити, якщо обладнання вийшло з ладу?
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Сервісний виїзд за 24 години після звернення. У нас власний підмінний фонд інверторів — на час ремонту встановлюємо тимчасовий пристрій, щоб ваш будинок не залишався без живлення.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" id="contacts">
+  <div class="container">
+    <div class="final-cta-content">
+      <h2 class="section-title reveal">Безкоштовна консультація за 30 хвилин</h2>
+      <p class="final-cta-subtitle reveal">Залиште контакт — наш інженер зв'яжеться з вами та підготує орієнтовний розрахунок.</p>
+
+      <form class="final-form reveal" id="finalForm" novalidate>
+        <input type="text" name="name" placeholder="Ваше ім'я" required />
+        <input type="tel" name="phone" placeholder="+380 (__) ___-__-__" required />
+        <button type="submit" class="btn btn-primary btn-large">Отримати консультацію</button>
+        <div class="form-success" id="finalFormSuccess">
+          ✓ Дякуємо! Ми зв'яжемося з вами протягом 30 хвилин.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="assets/logo__white.png" alt="Novasun" class="footer-logo-img" />
+        </div>
+        <p class="footer-about">Встановлюємо сонячні електростанції під ключ за стандартами ЄС. Енергонезалежність для дому та бізнесу.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 1.58c-.36-.3-.93-.34-1.47-.13L1.32 9.05c-.62.24-.99.79-.94 1.4.05.61.51 1.11 1.16 1.27l4.69 1.15 2.45 7.7c.09.28.31.5.59.59.08.03.17.04.26.04.21 0 .41-.08.56-.23l2.84-2.78 4.7 3.45c.2.15.45.23.7.23.13 0 .26-.02.39-.06.39-.13.69-.45.78-.85L23.5 3.13c.13-.55-.09-1.13-.45-1.55h-.05zm-13.1 13.36l-1.36 4.32-1.61-5.06 9.78-6.39-6.81 7.13z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Послуги</h4>
+        <ul>
+          <li><a href="#services">Монтаж СЕС</a></li>
+          <li><a href="#services">Електромонтажні роботи</a></li>
+          <li><a href="#services">Технічне обслуговування</a></li>
+          <li><a href="#services">Інфраструктура на об'єкті</a></li>
+          <li><a href="#services">Земляні роботи та палі</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакти</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+38 (050) 123-45-67</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@novasun.ua</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>м. Київ, вул. Сонячна, 24</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Пн–Пт: 9:00–19:00<br/>Сб: 10:00–16:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Novasun. Всі права захищені.
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING CONTACTS
+     ============================================================ -->
+<div class="float-contacts" id="floatContacts">
+  <div class="float-stack">
+    <a href="https://t.me/novasun" target="_blank" class="float-link tg" aria-label="Telegram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 1.58c-.36-.3-.93-.34-1.47-.13L1.32 9.05c-.62.24-.99.79-.94 1.4.05.61.51 1.11 1.16 1.27l4.69 1.15 2.45 7.7c.09.28.31.5.59.59.08.03.17.04.26.04.21 0 .41-.08.56-.23l2.84-2.78 4.7 3.45c.2.15.45.23.7.23.13 0 .26-.02.39-.06.39-.13.69-.45.78-.85L23.5 3.13c.13-.55-.09-1.13-.45-1.55h-.05z"/></svg>
+    </a>
+    <a href="viber://chat?number=%2B380501234567" class="float-link viber" aria-label="Viber">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.4.8c1.5 0 8.5 0 9 6.5.1 1.5 0 3-.1 4.5 0 .5-.4 4.6-4.8 4.8h-.4l-.5-.1c0-.1-.1-.1-.1-.2 0-.2.2-.3.3-.4 2.3-1.3 2.8-3.7 3-4.4.5-2 .3-5.2-1-6.5-1.5-1.5-3.5-1.6-4-1.6h-1.5c-.5 0-2.5.1-4 1.6C5.9 6.4 5.7 9.6 6.2 11.6c.2.7.7 3.1 3 4.4.1.1.3.2.3.4 0 .1 0 .1-.1.2l-.5.1h-.4C4.1 16.5 3.7 12.4 3.7 11.9c-.1-1.5-.2-3 .1-4.5C4.4.8 11.4.8 11.4.8z"/></svg>
+    </a>
+    <a href="https://wa.me/380501234567" target="_blank" class="float-link wa" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0012 4a7.94 7.94 0 00-6.85 11.94L4 20l4.2-1.1a7.94 7.94 0 003.8.97h.01a7.94 7.94 0 005.59-13.55zM12 18.5a6.59 6.59 0 01-3.36-.92l-.24-.14-2.49.65.67-2.43-.16-.25a6.6 6.6 0 1112.18-3.51 6.59 6.59 0 01-6.6 6.6zm3.61-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.45.1s-.51.64-.62.77c-.11.13-.23.15-.43.05a5.42 5.42 0 01-2.72-2.37c-.21-.36.21-.33.59-1.1.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.34-.45-.34h-.39c-.13 0-.35.05-.53.25s-.7.69-.7 1.67 1.45 2.42 1.65 2.6c.2.17 2.49 4.27 6.05 5.32 1.43.42 2.05.18 2.43-.04.46-.27 1.42-.83 1.62-1.62.2-.79.2-1.46.14-1.62-.06-.16-.21-.21-.41-.31z"/></svg>
+    </a>
+  </div>
+  <button class="float-toggle" id="floatToggle" aria-label="Контакти">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </button>
+</div>
+
+<!-- ============================================================
+     SCROLL TOP
+     ============================================================ -->
+<button class="scroll-top" id="scrollTop" aria-label="Вгору">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ============================================================
+     MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Закрити">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <h3 class="modal-title">Безкоштовна консультація</h3>
+    <p class="modal-subtitle">Залиште контакт — інженер зв'яжеться з вами протягом 30 хвилин.</p>
+    <form class="modal-form" id="modalForm" novalidate>
+      <input type="text" name="name" placeholder="Ваше ім'я" required />
+      <input type="tel" name="phone" placeholder="+380 (__) ___-__-__" required />
+      <button type="submit" class="btn btn-primary">Отримати консультацію</button>
+      <div class="form-success" id="modalFormSuccess" style="background: #DCFCE7; border-color: #86EFAC; color: #14532D;">
+        ✓ Дякуємо! Ми зв'яжемося з вами найближчим часом.
+      </div>
+      <p class="modal-disclaimer">Натискаючи кнопку, ви погоджуєтесь з обробкою персональних даних.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+/* ==========================================================
+   1. STICKY HEADER
+   ========================================================== */
+const header = document.getElementById('header');
+const scrollTopBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  header.classList.toggle('scrolled', y > 30);
+  scrollTopBtn.classList.toggle('show', y > 400);
+});
+
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ==========================================================
+   2. MOBILE NAVIGATION
+   ========================================================== */
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
+const mobileOverlay = document.getElementById('mobileOverlay');
+
+function toggleMobileNav(force) {
+  const open = force !== undefined ? force : !mobileNav.classList.contains('open');
+  burger.classList.toggle('active', open);
+  mobileNav.classList.toggle('open', open);
+  mobileOverlay.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+burger.addEventListener('click', () => toggleMobileNav());
+mobileOverlay.addEventListener('click', () => toggleMobileNav(false));
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMobileNav(false)));
+
+/* ==========================================================
+   3. LANG SWITCHER
+   ========================================================== */
+const langSwitcher = document.getElementById('langSwitcher');
+const currentLang = document.getElementById('currentLang');
+langSwitcher.querySelectorAll('[data-lang]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    currentLang.textContent = a.dataset.lang;
+  });
+});
+
+/* ==========================================================
+   3.1 PHONE TOGGLE
+   ========================================================== */
+const phoneToggle = document.getElementById('phoneToggle');
+const phoneIconBtn = phoneToggle.querySelector('.phone-icon-btn');
+phoneIconBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  phoneToggle.classList.toggle('open');
+});
+document.addEventListener('click', e => {
+  if (!phoneToggle.contains(e.target)) phoneToggle.classList.remove('open');
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') phoneToggle.classList.remove('open');
+});
+
+/* ==========================================================
+   4. HERO TITLE TYPEWRITER
+   ========================================================== */
+const heroTitles = document.querySelectorAll('.hero-title');
+const heroDots = document.querySelectorAll('.hero-dot');
+let heroIndex = 0;
+let heroTypeTimeout = null;
+let heroHoldTimeout = null;
+
+const originalHTML = Array.from(heroTitles).map(t => t.innerHTML.trim());
+const CHAR_SPEED = 45;
+const HOLD_TIME = 3000;
+
+function cancelHero() {
+  if (heroTypeTimeout) { clearTimeout(heroTypeTimeout); heroTypeTimeout = null; }
+  if (heroHoldTimeout) { clearTimeout(heroHoldTimeout); heroHoldTimeout = null; }
+}
+
+function typeWriter(el, html, done) {
+  let i = 0;
+  let current = '';
+  function step() {
+    if (i >= html.length) {
+      el.classList.remove('typing');
+      if (done) done();
+      return;
+    }
+    if (html[i] === '<') {
+      const end = html.indexOf('>', i);
+      const tagEnd = end === -1 ? html.length : end + 1;
+      current += html.slice(i, tagEnd);
+      i = tagEnd;
+      el.innerHTML = current;
+      step();
+    } else {
+      current += html[i];
+      i++;
+      el.innerHTML = current;
+      heroTypeTimeout = setTimeout(step, CHAR_SPEED);
+    }
+  }
+  step();
+}
+
+function showHeroTitle(idx) {
+  cancelHero();
+  heroTitles.forEach((t, i) => {
+    t.classList.remove('active', 'typing');
+    if (i !== idx) t.innerHTML = originalHTML[i];
+  });
+  heroDots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  heroIndex = idx;
+
+  const el = heroTitles[idx];
+  el.innerHTML = '';
+  el.classList.add('active', 'typing');
+
+  typeWriter(el, originalHTML[idx], () => {
+    heroHoldTimeout = setTimeout(() => {
+      showHeroTitle((idx + 1) % heroTitles.length);
+    }, HOLD_TIME);
+  });
+}
+
+heroDots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    showHeroTitle(parseInt(dot.dataset.slide));
+  });
+});
+
+showHeroTitle(0);
+
+/* ==========================================================
+   5. CALCULATOR
+   ========================================================== */
+const calcSteps = document.querySelectorAll('.calc-step');
+const calcIndicators = document.querySelectorAll('.calc-step-indicator');
+const calcProgressLine = document.getElementById('calcProgressLine');
+const totalSteps = 4;
+let currentStep = 1;
+
+function goToStep(step) {
+  currentStep = step;
+  calcSteps.forEach(s => s.classList.toggle('active', parseInt(s.dataset.step) === step));
+  calcIndicators.forEach(ind => {
+    const sn = parseInt(ind.dataset.step);
+    ind.classList.toggle('active', sn === step);
+    ind.classList.toggle('completed', sn < step);
+  });
+  // Update progress line
+  const pct = ((step - 1) / (totalSteps - 1)) * 100;
+  if (calcProgressLine) {
+    const lineWidth = `calc(${pct}% - ${pct === 0 ? 0 : 16}px)`;
+    calcProgressLine.style.width = pct === 0 ? '0' : `calc(${pct}% * 0.92)`;
+  }
+}
+
+document.querySelectorAll('.calc-next').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const next = parseInt(btn.dataset.next);
+    // Validate that current step has selection
+    const currentStepEl = document.querySelector(`.calc-step[data-step="${currentStep}"]`);
+    const checked = currentStepEl.querySelector('input[type="radio"]:checked');
+    if (!checked) {
+      currentStepEl.querySelectorAll('.calc-option-content').forEach(c => {
+        c.style.animation = 'none';
+        c.offsetHeight; // force reflow
+        c.style.animation = 'shake 0.4s';
+      });
+      return;
+    }
+    goToStep(next);
+  });
+});
+
+document.querySelectorAll('.calc-prev').forEach(btn => {
+  btn.addEventListener('click', () => goToStep(parseInt(btn.dataset.prev)));
+});
+
+const calcCalculate = document.getElementById('calcCalculate');
+const calcResult = document.getElementById('calcResult');
+calcCalculate.addEventListener('click', () => {
+  const lastStepEl = document.querySelector('.calc-step[data-step="4"]');
+  if (!lastStepEl.querySelector('input[type="radio"]:checked')) return;
+
+  const objectType = (document.querySelector('input[name="object_type"]:checked') || {}).value || 'private';
+
+  // Result logic based on object type
+  let power, price, payback;
+  if (objectType === 'private' || objectType === 'custom') {
+    power = '8–15 кВт';
+    price = '200 000–380 000 грн';
+    payback = '4–5 років';
+  } else if (objectType === 'commercial' || objectType === 'food') {
+    power = '20–50 кВт';
+    price = '500 000–1 200 000 грн';
+    payback = '3–4 роки';
+  } else { // industrial, leisure
+    power = '50–200 кВт';
+    price = '1 200 000–5 000 000 грн';
+    payback = '3–5 років';
+  }
+
+  document.getElementById('resPower').textContent = power;
+  document.getElementById('resPrice').textContent = price;
+  document.getElementById('resPayback').textContent = payback;
+  calcResult.classList.add('show');
+  setTimeout(() => calcResult.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+});
+
+/* ==========================================================
+   6. PORTFOLIO FILTER
+   ========================================================== */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    portfolioCards.forEach(card => {
+      const cat = card.dataset.category;
+      const show = filter === 'all' || cat === filter;
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
+
+/* ==========================================================
+   7. TESTIMONIALS SLIDER
+   ========================================================== */
+const testimonialsTrack = document.getElementById('testimonialsTrack');
+const testimonialCards = testimonialsTrack.children;
+const totalSlides = testimonialCards.length;
+const sliderDots = document.getElementById('sliderDots');
+let currentSlide = 0;
+let sliderInterval;
+
+// Create dots
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement('span');
+  dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => { goToSlide(i); restartSlider(); });
+  sliderDots.appendChild(dot);
+}
+
+function goToSlide(idx) {
+  currentSlide = (idx + totalSlides) % totalSlides;
+  testimonialsTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+  sliderDots.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+}
+function startSlider() { sliderInterval = setInterval(() => goToSlide(currentSlide + 1), 6000); }
+function restartSlider() { clearInterval(sliderInterval); startSlider(); }
+
+document.getElementById('sliderPrev').addEventListener('click', () => { goToSlide(currentSlide - 1); restartSlider(); });
+document.getElementById('sliderNext').addEventListener('click', () => { goToSlide(currentSlide + 1); restartSlider(); });
+startSlider();
+
+/* ==========================================================
+   8. FAQ ACCORDION
+   ========================================================== */
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-question');
+  const a = item.querySelector('.faq-answer');
+  q.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    // Close others
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight = '0';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      a.style.maxHeight = a.scrollHeight + 'px';
+    }
+  });
+});
+
+/* ==========================================================
+   9. MODAL
+   ========================================================== */
+const modal = document.getElementById('modal');
+const modalClose = document.getElementById('modalClose');
+
+function openModal() {
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.open-modal').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    openModal();
+  });
+});
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ==========================================================
+   10. FLOATING CONTACTS
+   ========================================================== */
+const floatContacts = document.getElementById('floatContacts');
+const floatToggle = document.getElementById('floatToggle');
+floatToggle.addEventListener('click', e => {
+  e.stopPropagation();
+  floatContacts.classList.toggle('open');
+});
+document.addEventListener('click', e => {
+  if (!floatContacts.contains(e.target)) floatContacts.classList.remove('open');
+});
+
+/* ==========================================================
+   11. FORMS — Validation & Submission
+   ========================================================== */
+function validatePhone(phone) {
+  // Accept +380XXXXXXXXX or 0XXXXXXXXX (10 digits) or general 9-15 digits
+  const cleaned = phone.replace(/[\s\-\(\)]/g, '');
+  return /^(\+?38)?0?\d{9,12}$/.test(cleaned);
+}
+
+function handleFormSubmit(form, successEl) {
+  return function (e) {
+    e.preventDefault();
+    let valid = true;
+    const nameInput = form.querySelector('input[name="name"]');
+    const phoneInput = form.querySelector('input[name="phone"]');
+
+    [nameInput, phoneInput].forEach(i => i.classList.remove('error'));
+
+    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+      nameInput.classList.add('error');
+      valid = false;
+    }
+    if (!validatePhone(phoneInput.value.trim())) {
+      phoneInput.classList.add('error');
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // Simulate submission
+    form.querySelector('button[type="submit"]').textContent = 'Відправляємо...';
+    setTimeout(() => {
+      successEl.classList.add('show');
+      form.querySelector('button[type="submit"]').textContent = '✓ Відправлено';
+      nameInput.value = '';
+      phoneInput.value = '';
+      setTimeout(() => {
+        successEl.classList.remove('show');
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = btn.dataset.original || 'Отримати консультацію';
+      }, 5000);
+    }, 800);
+  };
+}
+
+const finalForm = document.getElementById('finalForm');
+finalForm.addEventListener('submit', handleFormSubmit(finalForm, document.getElementById('finalFormSuccess')));
+
+const modalForm = document.getElementById('modalForm');
+modalForm.addEventListener('submit', handleFormSubmit(modalForm, document.getElementById('modalFormSuccess')));
+
+/* ==========================================================
+   12. SCROLL REVEAL — Intersection Observer
+   ========================================================== */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ==========================================================
+   13. SMOOTH SCROLL FOR ANCHORS
+   ========================================================== */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = a.getAttribute('href');
+    if (target === '#' || target.length < 2) return;
+    const el = document.querySelector(target);
+    if (!el) return;
+    e.preventDefault();
+    const headerOffset = 80;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+
+/* ==========================================================
+   14. PHONE INPUT FORMATTING
+   ========================================================== */
+document.querySelectorAll('input[type="tel"]').forEach(input => {
+  input.addEventListener('input', e => {
+    let v = e.target.value.replace(/\D/g, '');
+    if (v.startsWith('380')) v = v.slice(0, 12);
+    else if (v.startsWith('0')) v = v.slice(0, 10);
+    else v = v.slice(0, 12);
+
+    let formatted = '';
+    if (v.length === 0) formatted = '';
+    else if (v.startsWith('380')) {
+      formatted = '+380';
+      if (v.length > 3) formatted += ' (' + v.slice(3, 5);
+      if (v.length >= 5) formatted += ') ' + v.slice(5, 8);
+      if (v.length >= 8) formatted += '-' + v.slice(8, 10);
+      if (v.length >= 10) formatted += '-' + v.slice(10, 12);
+    } else {
+      formatted = v;
+    }
+    e.target.value = formatted;
+  });
+});
+</script>
+
+<style>
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+</style>
+
+</body>
+</html>
